@@ -52,7 +52,6 @@ describe("detectCheck", () => {
     expect(detectCheck(nodeList)).toEqual(["Robot", "Animal"]);
   });
 });
-
 //Test funciones Locations
 
 describe("se prueban funciones removeDuplicates, filterByLetter, countCharactersByLocation de Paola", () => {

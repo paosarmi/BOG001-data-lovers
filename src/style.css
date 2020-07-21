@@ -5,9 +5,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* background-color: #151619; */
-  /* font-family: "Gloria Hallelujah";
-  color: #eae9ec; */
+  font-family: "Gloria Hallelujah";
+  color: #eae9ec;
 }
 
 ::after,
@@ -19,20 +18,23 @@
   --font-titles: "Gloria Hallelujah", cursive;
   --font-regular: "Handlee", cursive;
   --font-color: #ffffff;
+  --font-button-color: #088488;
   --font-size1: 30px;
   --font-size2: 25px;
-  --font-size3: 15px;
+  --font-size3: 17px;
+  --background-button-color: #62c8df63;
+  --background-card-color: #2f4655;
   --background-color-web: #202329;
   --background-color-mobile: #151619;
   --background-color-header: #ffffff0d;
 }
 
 #navbar {
-  /* background-color: #ffffff0d; */
   background-color: #1e1f1e;
-  /* position: absolute; */
+  position: absolute;
   z-index: 5;
   width: 100%;
+  transition: all 0.3s ease-in-out;
 }
 
 .hide {
@@ -47,6 +49,7 @@
 #containerCategoriesMenu {
   /* background-color: #151619; */
   /* display: flex; */
+  cursor: pointer;
   font-size: 25px;
   text-align: center;
   padding: 20px 0;
@@ -114,6 +117,7 @@ body {
   display: flex;
   align-items: center;
   margin: 30px 0px 30px 20px;
+  font-size: var(--font-size2);
 }
 
 .column2 {
@@ -145,6 +149,11 @@ body {
 .row {
   display: flex;
   flex-wrap: wrap;
+}
+
+.row p {
+  font-family: var(--font-regular);
+  font-size: var(--font-size2);
 }
 
 .row-az {
@@ -188,11 +197,20 @@ body {
 .page-button {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
+}
+
+.page-button img {
+  width: 60px;
 }
 
 .card-location {
+  margin: 20px;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .card-location h2 {
@@ -220,11 +238,6 @@ body {
   box-shadow: 0 4px 8px 0 rgb(6, 6, 6);
 }
 
-.card-location {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
 .flip-card-front,
 .flip-card-back {
   font-family: var(--font-regular);
@@ -245,6 +258,9 @@ body {
   background-color: #2f4655;
   color: white;
   transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 footer {

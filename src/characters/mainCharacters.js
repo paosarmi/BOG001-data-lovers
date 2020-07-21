@@ -105,6 +105,7 @@ const previusPag = (urlBase, page, filterParameters) => {
   const regex = /,/gi;
   const rex = /&&/gi;
   const a = nextUrl.replace(regex, "&");
+  // eslint-disable-next-line no-unused-vars
   const newNextUrl = a.replace(rex, "&");
   // console.log(newNextUrl);
   window.location.href = newNextUrl;
